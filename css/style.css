@@ -361,6 +361,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     padding-bottom: 20px;
 }
 
+@media (max-width: 991.98px) {
+    .site-nav .top-bar .col-lg-4 {
+        display: none;
+    }
+}
+
 .site-nav h1 {
     margin: 0;
     padding: 0;
