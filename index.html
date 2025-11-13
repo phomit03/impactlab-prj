@@ -71,16 +71,15 @@
                 <a href="index.html" class="logo menu-absolute m-0">ImpactLab<span class="text-primary">.</span></a>
 
                 <ul class="js-clone-nav d-none d-lg-inline-block site-menu">
-                    <li class="active"><a href="index.html">Trang chủ</a></li>
-                    <li><a href="#introduce">Về Chương Trình</a></li>
-                    <li><a href="#difference">Điểm Khác Biệt</a></li>
-                    <li><a href="#services">Đối Tượng</a></li>
-                    <li><a href="#benefit">Giá Trị</a></li>
-                    <li><a href="#content">Nội Dung</a></li>
-                    <li><a href="#team">Đội Ngũ</a></li>
+                    <li><a href="#home" data-target="home" class="nav-link">Trang chủ</a></li>
+                    <li><a href="#introduce" data-target="introduce" class="nav-link">Về Chương Trình</a></li>
+                    <li><a href="#services" data-target="services" class="nav-link">Đối Tượng</a></li>
+                    <li><a href="#difference" data-target="difference" class="nav-link">Điểm Khác Biệt</a></li>
+                    <li><a href="#benefit" data-target="benefit" class="nav-link">Giá Trị</a></li>
+                    <li><a href="#content" data-target="content" class="nav-link">Nội Dung</a></li>
+                    <li><a href="#team" data-target="team" class="nav-link">Đội Ngũ</a></li>
+                    <a href="#register" class="btn-book btn btn-secondary btn-sm menu-absolute">Đăng Ký Ngay</a>
                 </ul>
-
-                <a href="#register" class="btn-book btn btn-secondary btn-sm menu-absolute">Đăng Ký Ngay</a>
 
                 <a href="#"
                    class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light"
@@ -92,7 +91,7 @@
     </div>
 </nav> <!-- /.nav menu -->
 
-<div class="untree_co-hero overlay" style="background-image: url('images/img-school-6-min.jpg');">
+<div id="home" class="untree_co-hero overlay" style="background-image: url('images/img-school-6-min.jpg');">
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-12">
@@ -112,7 +111,7 @@
     </div>
 </div> <!-- /.background -->
 
-<div id="introduce" class="untree_co-section introduce-section text-center">
+<div id="introduce" class="untree_co-section introduce-section text-center" data-aos="fade-up" data-aos-delay="100">
     <div class="container">
         <h2 class="section-title mb-4 fw-bold">AFS Global You™ Changemaker</h2>
         <p class="lead mx-auto" style="max-width: 800px;">
@@ -456,7 +455,7 @@
                 <div class="timeline-point">
                     <span class="timeline-number">01</span>
                 </div>
-                <div class="timeline-card">
+                <div class="timeline-card" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="mb-2 content-title">
                         <span class="text-primary fw-bold">01.</span> Leadership Bootcamp
                     </h3>
@@ -531,7 +530,7 @@
                 <div class="timeline-point">
                     <span class="timeline-number">02</span>
                 </div>
-                <div class="timeline-card">
+                <div class="timeline-card" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="mb-3 content-title">
                         <span class="text-primary fw-bold">02.</span> Triển khai
                     </h3>
@@ -550,7 +549,7 @@
                 <div class="timeline-point">
                     <span class="timeline-number">03</span>
                 </div>
-                <div class="timeline-card">
+                <div class="timeline-card" data-aos="fade-up" data-aos-delay="200">
                     <h3 class="mb-3 content-title">
                         <span class="text-primary fw-bold">03.</span> Tổng kết
                     </h3>
@@ -808,7 +807,7 @@
 
             <!-- Left: Logo + Language Switcher -->
             <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
-                <div class="footer-lang" style="float: left;">
+                <div class="footer-lang">
                     <img src="images/LogoCPDS.png" alt="ImpactLab" class="footer-logo mb-3" style="padding-right: 10px;">
                     <img src="images/LogoT&C.png" alt="ImpactLab" class="footer-logo mb-3">
                 </div>
@@ -907,7 +906,7 @@
 ></script>
 
 <script>
-    // NÚT BACK TO TOP - Hiện khi cuộn, click lên đầu trang mượt
+    // NÚT BACK TO TOP
     document.addEventListener('DOMContentLoaded', function() {
         const backTo099 = document.getElementById('backToTop');
 
@@ -931,6 +930,7 @@
 </script>
 
 <script>
+    // Scroll
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -942,6 +942,40 @@
                 });
             }
         });
+    });
+</script>
+<script>
+    // MENU ACTIVE KHI CUỘN – HOẠT ĐỘNG HOÀN HẢO TRÊN MOBILE + DESKTOP
+    document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('section[id], div[id], footer[id]');
+        const navLinks = document.querySelectorAll('.nav-link[data-target]');
+
+        function activateMenu() {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150; // cách navbar + margin
+                const sectionHeight = section.offsetHeight;
+                if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            // Nếu ở đầu trang (scrollY = 0) → active "home"
+            if (window.scrollY < 100) {
+                current = 'home';
+            }
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-target') === current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', activateMenu);
+        activateMenu(); // chạy lần đầu
     });
 </script>
 

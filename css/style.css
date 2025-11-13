@@ -135,8 +135,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 .btn.btn-secondary:hover {
-    border-color: #14b4ff;
-    background: #14b4ff;
+    border-color: #14b4ff !important;
+    background: #14b4ff !important;
 }
 
 .btn.btn-sm {
@@ -332,7 +332,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     border: 1px solid #ffffff !important;
     border-radius: 0 !important;
 }
-@media (max-width: 1200px) {
+@media (min-width: 991.98px) and (max-width: 1200px) {
     .btn-book {
         display: none !important;
     }
@@ -696,10 +696,25 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 .site-mobile-menu .site-nav-wrap a {
-    padding: 5px 20px;
+    /*padding: 5px 20px;*/
     display: block;
     position: relative;
     color: #000000;
+}
+
+.site-mobile-menu .site-nav-wrap .btn {
+    /*padding: 5px 20px;*/
+    margin-top: 320px;
+    display: block;
+    position: relative;
+    color: #000000;
+    border: 1px solid #000000 !important;
+}
+
+.site-mobile-menu .site-nav-wrap .btn:hover, .site-mobile-menu .site-nav-wrap .btn:focus, .site-mobile-menu .site-nav-wrap .btn:active {
+    background: #103456 !important;
+    border: none !important;
+    color: white !important;
 }
 
 .site-mobile-menu .site-nav-wrap a:hover {
@@ -759,7 +774,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 .site-mobile-menu .site-nav-wrap > li > a {
     padding-left: 20px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .site-mobile-menu .site-nav-wrap > li > ul {
@@ -1109,14 +1125,18 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 @media (max-width: 991.98px) {
-    .untree_co-section {
+    /*.untree_co-section {
         padding: 60px 0 !important;
-    }
-    .separator-image {
+    }*/
+    /*.separator-image {
         display: none;
-    }
+    }*/
     .services-section {
         margin: 0 !important;
+    }
+
+    .services-section .img-wrap-2 {
+        display: none;
     }
 }
 
@@ -1825,6 +1845,43 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     font-size: 18px;
 }
 
+/* ĐIỂM KHÁC BIỆT – ẢNH NẰM DƯỚI TEXT TRÊN MOBILE (DÀNH RIÊNG CHO HTML CỦA BẠN) */
+.difference-section .row {
+    flex-direction: column; /* Mobile: dọc */
+}
+
+.difference-section .col-lg-6:first-child {
+    order: 2; /* ảnh xuống dưới */
+}
+
+.difference-section .col-lg-6:last-child {
+    order: 1; /* text + accordion lên trên */
+}
+
+/* Desktop: trở lại bình thường (ảnh trái – text phải) */
+@media (min-width: 992px) {
+    .difference-section .row {
+        flex-direction: row;
+    }
+    .difference-section .col-lg-6:first-child {
+        order: 1;
+    }
+    .difference-section .col-lg-6:last-child {
+        order: 2;
+    }
+}
+
+/* Tinh chỉnh đẹp hơn trên mobile */
+@media (max-width: 991.98px) {
+    .difference-section .col-lg-6:last-child {
+        margin-bottom: 40px; /* cách ảnh */
+    }
+
+    .difference-section .col-lg-6:first-child {
+        margin-bottom: 20px;
+    }
+}
+
 .services-section {
     background: #f8f9fa;
     padding: 70px 0;
@@ -2359,6 +2416,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .footer-logo {
     height: 100px;
     filter: brightness(0) invert(1);
+}
+
+@media (min-width: 991.98px) {
+    .footer-lang {
+        float: left;
+    }
 }
 
 .lang-switcher {
@@ -2914,25 +2977,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     50% { transform: translateY(10px); }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .program-timeline-vertical::before {
-        left: 35px;
-    }
-    .timeline-block {
-        padding-left: 80px;
-    }
-    .timeline-point {
-        left: 10px;
-        width: 45px;
-        height: 45px;
-    }
-    .timeline-number {
-        font-size: 20px;
-    }
-}
-
-
 /* ============= doi ngu ============= */
 
 .team-section {
@@ -3327,5 +3371,475 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
         font-size: 22px;
         bottom: 20px;
         right: 20px;
+    }
+}
+
+/* =========== active nav scroll ========*/
+.nav-link {
+    position: relative;
+    transition: all 0.3s ease;
+}
+@media (min-width: 991.98px) {
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -8px;
+        left: 50%;
+        width: 0;
+        height: 3px;
+        background: #00aeff;
+        border-radius: 2px;
+        transition: all 0.4s ease;
+        transform: translateX(-50%);
+    }
+
+    .nav-link.active {
+        color: #00aeff !important;
+        font-weight: 600;
+    }
+
+    .nav-link.active::after {
+        width: 100%;
+    }
+
+    /* RIÊNG TRANG CHỦ KHI ACTIVE → CHỮ TRẮNG, KHÔNG GẠCH DƯỚI */
+    .nav-link[data-target="home"].active {
+        color: #ffffff !important;
+        font-weight: 600;
+    }
+
+    .nav-link[data-target="home"].active::after {
+        width: 0 !important; /* không hiện gạch dưới */
+    }
+}
+
+/* Mobile menu cũng áp dụng */
+.mobile-menu .nav-link.active {
+    color: #103456;
+}
+
+/*.mobile-register-btn {
+    padding: 0 20px 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 20px;
+}
+
+.mobile-register-btn .btn {
+    border-radius: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 14px 20px;
+    font-size: 15px;
+}
+
+!* Hiệu ứng khi hover *!
+.mobile-register-btn .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255,107,53,0.3);
+}*/
+
+
+/*================== responsive ===============*/
+
+css/* ===================================================================
+   RESPONSIVE CHUYÊN NGHIỆP – BỔ SUNG HOÀN CHỈNH
+   Chỉnh size, khoảng cách, font – giữ nguyên layout 100%
+   =================================================================== */
+
+/* Large devices (desktops, 1200px trở lên) – giữ nguyên */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Medium-Large devices (992px - 1199px) */
+@media (max-width: 1199.98px) {
+    .services-section, .team-section {
+        padding: 50px 0;
+    }
+    .services-section {
+        margin-top: 30px !important;
+    }
+
+    .line-bottom {
+        font-size: 2.5rem !important;
+    }
+    .untree_co-section .sub-title {
+        font-size: 1.3rem !important;
+    }
+
+    .untree_co-section p, li, li a {
+        font-size: 1.125rem !important;
+    }
+
+    .competency-card {
+        padding: 32px 24px;
+    }
+    .competency-card h3 {
+        font-size: 1.25rem !important;
+    }
+    .competency-card p {
+        font-size: 1rem !important;
+    }
+    .timeline-card .content-title {
+        font-size: 1.5rem !important;
+    }
+    .day-header h3 {
+        font-size: 1.25rem !important;
+    }
+
+    .icon-circle {
+        width: 80px;
+        height: 80px;
+    }
+    .icon-circle span {
+        font-size: 36px;
+    }
+    .bootcamp-day-card {
+        padding: 28px;
+    }
+    .info-card {
+        padding: 36px 28px;
+    }
+    .team-name {
+        font-size: 1.25rem !important;
+    }
+    .team-role {
+        font-size: 1.1rem !important;
+    }
+    .team-desc li {
+        font-size: 1rem !important;
+    }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991.98px) {
+    /* Navbar */
+    .site-nav .site-navigation .site-menu > li > a {
+        padding: 10px 12px;
+        font-size: 13.5px;
+    }
+    /*.btn-book {
+        right: 70px;
+        padding: 8px 16px !important;
+        font-size: 10px;
+    }*/
+
+    /* Hero */
+    .untree_co-hero .heading {
+        font-size: 2.8rem;
+    }
+    .untree_co-hero .caption {
+        font-size: 1.1rem;
+    }
+
+    /* Section title */
+    .line-bottom {
+        font-size: 2.5rem !important;
+    }
+    .sub-title {
+        font-size: 1rem;
+    }
+
+    /* Đối tượng & Giá trị */
+    .sequential-item p,
+    .competency-card h3 {
+        font-size: 22px;
+    }
+    .competency-card p {
+        font-size: 18px;
+    }
+    .icon-circle {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 20px;
+    }
+    .icon-circle span {
+        font-size: 34px;
+    }
+
+    /* Timeline */
+    .timeline-block {
+        padding-left: 70px;
+    }
+    .timeline-number {
+        font-size: 20px;
+    }
+    .timeline-card {
+        padding: 28px;
+    }
+    .content-title {
+        font-size: 1.6rem;
+    }
+
+    /* Đội ngũ */
+    .team-img {
+        height: 300px;
+    }
+    .team-name {
+        font-size: 20px;
+    }
+    .team-desc li {
+        font-size: 15px;
+    }
+
+    /* Đăng ký */
+    .info-card {
+        padding: 32px 24px;
+    }
+    .info-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 32px;
+    }
+    .info-title {
+        font-size: 20px;
+    }
+    .info-content p,
+    .time-list li {
+        font-size: 17px;
+    }
+    .qr-img {
+        width: 140px;
+        height: 140px;
+    }
+
+    /* Footer */
+    .footer-contact-title {
+        font-size: 20px;
+    }
+    .footer-contact-text {
+        font-size: 15px;
+    }
+}
+
+/* Small tablets & large phones (576px - 767px) */
+@media (max-width: 767.98px) {
+    /* General */
+    .line-bottom {
+        font-size: 2.3rem !important;
+    }
+    .untree_co-section .sub-title {
+        font-size: 1.3rem;
+    }
+
+    /* Hero */
+    .untree_co-hero .caption {
+        font-size: 1rem;
+    }
+
+    /* Separator */
+    .separator-image img {
+        width: 150px;
+    }
+
+    /* Sequential list */
+    .sequential-circle {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+        line-height: 36px;
+    }
+    .sequential-item p {
+        font-size: 16px;
+    }
+
+    .content-title {
+        font-size: 1.55rem !important;
+    }
+
+    /* Competency cards */
+    .competency-card {
+        padding: 28px 20px;
+    }
+    .icon-circle {
+        width: 70px;
+        height: 70px;
+    }
+    .icon-circle span {
+        font-size: 32px;
+    }
+    .competency-card h3 {
+        font-size: 20px;
+    }
+    .competency-card p {
+        font-size: 16px;
+    }
+
+    /* Timeline */
+    .timeline-number {
+        font-size: 20px;
+    }
+    .timeline-card {
+        padding: 24px;
+    }
+    .bootcamp-day-card {
+        padding: 24px;
+    }
+    .day-header h3 {
+        font-size: 20px;
+    }
+
+    /* Đội ngũ */
+    .team-img {
+        height: 260px;
+    }
+    .team-info {
+        padding: 24px;
+    }
+    .team-name {
+        font-size: 20px;
+    }
+    .team-role {
+        font-size: 18px;
+    }
+    .team-desc li {
+        font-size: 16px;
+    }
+
+    /* Đăng ký */
+    .info-card {
+        padding: 28px 20px;
+        margin-bottom: 24px;
+    }
+    .info-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 30px;
+    }
+    .info-title {
+        font-size: 20px;
+    }
+    .info-content p, .time-list li {
+        font-size: 18px;
+    }
+    .qr-img {
+        width: 130px;
+        height: 130px;
+    }
+
+    /* Footer */
+    .footer-logo {
+        width: 120px;
+    }
+    .footer-contact-title {
+        font-size: 22px;
+    }
+    .footer-contact-text {
+        font-size: 16px;
+    }
+    .social-img-link {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+/* Mobile nhỏ (<576px) */
+@media (max-width: 575.98px) {
+    /* Container padding */
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Hero */
+    /*.untree_co-hero .heading {
+        font-size: 2.2rem;
+    }
+    .untree_co-hero .caption {
+        font-size: 0.95rem;
+    }*/
+
+    /* Title */
+    .untree_co-section h2 {
+        font-size: 2.1rem !important;
+    }
+    .untree_co-section .sub-title {
+        font-size: 1.2rem !important;
+    }
+
+    .untree_co-section p,li,li a {
+        font-size: 1rem !important;
+    }
+
+    .custom-accordion .accordion-item .btn-link {
+        font-size: 1rem !important;
+    }
+
+    .timeline-card .content-title {
+        font-size: 1.3rem !important;
+    }
+    .day-header h3 {
+        font-size: 18px !important;
+    }
+    .team-name {
+        font-size: 18px !important;
+    }
+    .team-desc li {
+        font-size: 14px !important;
+    }
+    .info-title {
+        font-size: 18px;
+    }
+
+    .timeline-block {
+        padding-left: 60px !important;
+    }
+
+    /* Back to top */
+    .back-to-top {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* Footer */
+    .footer-contact-title {
+        font-size: 18px;
+    }
+    .footer-contact-text {
+        font-size: 14px;
+        gap: 8px;
+    }
+    .contact-icon {
+        margin-top: 0;
+    }
+}
+
+/* Fix cho iPhone nhỏ (dưới 375px) – tránh bị zoom */
+@media (max-width: 374.98px) {
+    .untree_co-hero .heading {
+        font-size: 2rem;
+    }
+    .section-title,
+    .line-bottom {
+        font-size: 1.7rem !important;
+    }
+    .competency-card h3 {
+        font-size: 17px;
+    }
+    .info-title {
+        font-size: 18px;
+    }
+
+    /* Back to top */
+    .back-to-top {
+        width: 38px;
+        height: 38px;
+        font-size: 22px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+/*fix menu*/
+@media (min-width: 991px) and (max-width: 1200px) {
+    .site-menu > li:nth-child(1) > a.nav-link,
+    .site-menu > li:nth-child(2) > a.nav-link {
+        display: none;
     }
 }
