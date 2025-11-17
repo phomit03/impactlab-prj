@@ -2487,7 +2487,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 /* Social Icons */
-/* SOCIAL ICONS DÙNG ẢNH PNG/SVG */
 .social-images {
     display: flex;
     justify-content: center;
@@ -3127,7 +3126,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 
 /* =================== đăng ký tham gia ===================*/
 .register-section {
-    padding: 70px 0 120px 0;
+    padding: 70px 0 100px 0;
     /*background: #f8f9fa;*/
 }
 
@@ -3547,6 +3546,10 @@ css/* ===================================================================
     .line-bottom {
         font-size: 2.5rem !important;
     }
+
+    .untree_co-section h2 {
+        font-family: "Montserrat Black", sans-serif;
+    }
     .untree_co-section .sub-title {
         font-size: 1.3rem !important;
     }
@@ -3622,6 +3625,16 @@ css/* ===================================================================
     }
     .sub-title {
         font-size: 1rem;
+    }
+
+    .timeline-card .row .col-md-6 {
+        margin-bottom: 1rem !important;
+    }
+    .timeline-arrow {
+        margin: 0 0 15px 0 !important;
+    }
+    .team-section .row .col-md-6 {
+        margin-bottom: 1rem !important;
     }
 
     /* Đối tượng & Giá trị */
@@ -3731,6 +3744,10 @@ css/* ===================================================================
         font-size: 1.55rem !important;
     }
 
+    .register-section .row .col-md-4 {
+        margin-bottom: 1rem !important;
+    }
+
     /* Competency cards */
     .competency-card {
         padding: 28px 20px;
@@ -3803,7 +3820,7 @@ css/* ===================================================================
 
     /* Footer */
     .footer-logo {
-        width: 120px;
+        height: 100px;
     }
     .footer-contact-title {
         font-size: 22px;
@@ -3843,6 +3860,18 @@ css/* ===================================================================
 
     .untree_co-section p,li,li a {
         font-size: 1rem !important;
+    }
+
+    .difference-section {
+        padding: 20px 0 0 0;
+    }
+
+    .separator-fix-phone {
+        margin-top: 20px !important;
+    }
+
+    .benefit-section {
+        margin: 20px 0 40px 0;
     }
 
     .custom-accordion .accordion-item .btn-link {
