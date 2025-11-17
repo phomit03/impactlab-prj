@@ -3548,7 +3548,8 @@ css/* ===================================================================
     }
 
     .untree_co-section h2 {
-        font-family: "Montserrat Black", sans-serif;
+        font-family: "Montserrat Black", sans-serif !important;
+        font-weight: bold !important;
     }
     .untree_co-section .sub-title {
         font-size: 1.3rem !important;
