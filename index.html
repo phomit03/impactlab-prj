@@ -68,7 +68,13 @@
     <div class="sticky-nav js-sticky-header">
         <div class="container position-relative">
             <div class="site-navigation text-center">
-                <a href="index.html" class="logo menu-absolute m-0">ImpactLab<span class="text-primary">.</span></a>
+                <!-- LOGO ẢNH - Ẩn/hiện theo scroll -->
+                <a href="index.html" class="logo menu-absolute m-0">
+                    <!-- Logo trắng (khi ở đầu trang - nền trong suốt) -->
+                    <img src="images/LogoImpactLab-white.png" alt="ImpactLab" class="logo-img logo-white">
+                    <!-- Logo màu (khi scroll xuống - nền trắng) -->
+                    <img src="images/LogoImpactLab-navy.png" alt="ImpactLab" class="logo-img logo-color">
+                </a>
 
                 <ul class="js-clone-nav d-none d-lg-inline-block site-menu">
                     <li><a href="#home" data-target="home" class="nav-link">Trang chủ</a></li>
@@ -91,19 +97,20 @@
     </div>
 </nav> <!-- /.nav menu -->
 
-<div id="home" class="untree_co-hero overlay" style="background-image: url('images/img-school-6-min.jpg');">
+<div id="home" class="untree_co-hero overlay" style="background-image: url('images/background.png');">
     <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-12">
                 <div class="row justify-content-center ">
                     <div class="col-lg-12 text-center ">
                         <h1 class="col-lg-6 text-center mb-4 heading text-white" data-aos="fade-up"
-                            data-aos-delay="100">AFS Global You Changemaker</h1>
-                        <p class="col-lg-9 mb-4 caption text-white" data-aos="fade-up" data-aos-delay="100">Phát triển
-                            dự án tác động xã hội của bạn và tạo ra sự thay đổi xã hội tích cực trong cộng đồng, với
-                            chứng nhận từ Trung tâm Chiến lược Tác động Xã hội của Đại học Pennsylvania.</p>
-                        <p class="mb-0" data-aos="fade-up" data-aos-delay="300"><a href="#register" class="btn btn-secondary">Đăng
-                            Ký Tham Gia</a></p>
+                            data-aos-delay="100">ImpactLab</h1>
+                        <p class="col-lg-6 mb-4 caption text-white" data-aos="fade-up" data-aos-delay="100">
+                            Chương trình phát triển năng lực lãnh đạo cho thanh thiếu niên và thúc đẩy sáng kiến vì cộng đồng.
+                        </p>
+                        <p class="mb-0" data-aos="fade-up" data-aos-delay="300">
+                            <a href="#register" class="btn btn-secondary">Đăng Ký Tham Gia</a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -113,7 +120,7 @@
 
 <div id="introduce" class="untree_co-section introduce-section text-center" data-aos="fade-up" data-aos-delay="100">
     <div class="container">
-        <h2 class="section-title mb-4 fw-bold">AFS Global You™ Changemaker</h2>
+        <h2 class="section-title mb-4 fw-bold">Về Chương Trình</h2>
         <p class="lead mx-auto" style="max-width: 800px;">
             Mỗi người trẻ đều mang trong mình những tiềm năng to lớn.
             Tiềm năng ấy không chỉ nằm ở trí tuệ, mà còn ở cách bạn cảm nhận, yêu thương và mong thế giới trở nên tốt
@@ -125,7 +132,7 @@
             người khác hạnh phúc cùng mình.
         </p>
         <p class="mx-auto" style="max-width: 800px;">
-            <b>Leaders of Impact</b> ra đời từ một niềm tin mạnh mẽ rằng:
+            <b>ImpactLab</b> ra đời từ một niềm tin mạnh mẽ rằng:
         </p>
         <p class="mx-auto" style="max-width: 800px; color: #103456;">
             Người trẻ — và cả những phiên bản trưởng thành hơn của họ — sẽ hạnh phúc nhất khi biết dùng tài năng của
@@ -143,8 +150,8 @@
         <div class="row justify-content-between">
             <div class="col-lg-6 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
                 <div class="section-title mb-4">
-                    <h2 class="line-bottom">Đối Tượng Tham Gia</h2>
-                    <p class="sub-title">Ai có thể tham gia ImpactLab?</p>
+                    <h2 class="line-bottom">Ai có thể tham gia ImpactLab?</h2>
+                    <!--<p class="sub-title"></p>-->
                 </div>
 
                 <p class="mb-3">
@@ -186,9 +193,9 @@
                 </p>
             </div>
 
-            <div class="col-lg-5" data-aos="fade-up" data-aos-delay="0">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="0">
                 <figure class="img-wrap-2">
-                    <img src="images/teacher.png" alt="Image" class="img-fluid">
+                    <img src="images/doituong_bg.png" alt="Image" class="img-fluid">
                     <div class="dotted"></div>
                 </figure>
 
@@ -205,11 +212,11 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 mr-auto mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="0">
-                <img src="images/teacher-min.jpg" alt="image" class="img-fluid">
+                <img src="images/khacbiet.jpg" alt="image" class="img-fluid">
             </div>
             <div class="col-lg-6 ml-auto" data-aos="fade-up" data-aos-delay="100">
-                <h2 class="line-bottom">Điểm Khác Biệt</h2>
-                <p class="sub-title" style="margin-bottom: 32px">ImpactLab có gì khác biệt?</p>
+                <h2 class="line-bottom" style="margin-bottom: 32px">ImpactLab có gì <br>khác biệt?</h2>
+                <!--<p class="sub-title" style="margin-bottom: 32px"></p>-->
 
                 <div class="custom-accordion" id="accordion_1">
                     <div class="accordion-item">
@@ -295,7 +302,7 @@
                                         <ul class="list-unstyled ul-check primary text-start d-inline-block mb-4">
                                             <li><strong>Các chuyên gia:</strong> cho bạn những kiến thức thực tiễn, giúp bạn mở rộng tầm nhìn và phát triển những góc nhìn sâu sắc hơn</li>
                                             <li><strong>Các mentor:</strong> luôn bên cạnh, giúp bạn không bị chệch hướng và vững tin vào bản thân</li>
-                                            <li><strong>Cộng đồng Impacteer</strong> — những người bạn cùng học hỏi, sẻ chia và cam kết hành động.</li>
+                                            <li><strong>Cộng đồng Impacter</strong> — những người bạn cùng học hỏi, sẻ chia và cam kết hành động.</li>
                                         </ul>
 
                                         <p class="mb-0">
@@ -324,8 +331,8 @@
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-lg-7 text-center" data-aos="fade-up" data-aos-delay="0">
-                <h2 class="line-bottom text-center mb-2">Giá Trị Từ Chương Trình</h2>
-                <p class="sub-title mb-0">Tại sao bạn nên tham gia ImpactLab?</p>
+                <h2 class="line-bottom text-center mb-2">Tại sao bạn nên <br>tham gia ImpactLab?</h2>
+                <!--<p class="sub-title mb-0"></p>-->
             </div>
         </div>
         <div class="row g-4">
@@ -442,8 +449,8 @@
     <div class="container">
         <div class="row justify-content-center mb-2">
             <div class="col-lg-7 text-center" data-aos="fade-up">
-                <h2 class="line-bottom mb-2">Nội Dung Chương Trình</h2>
-                <p class="sub-title mb-0">ImpactLab Sẽ Có Những Gì?</p>
+                <h2 class="line-bottom mb-2">Hành trình của bạn tại ImpactLab có gì?</h2>
+                <!--<p class="sub-title mb-0"></p>-->
             </div>
         </div>
 
@@ -476,7 +483,7 @@
                                 <p class="mt-3">
                                     Mỗi người đều mang trong mình một <strong>ngọn đèn</strong> – đó là <strong>khí lực sống</strong>, đó là <strong>khí phách</strong> khi đối diện với thử thách. Ngày đầu tiên là khoảnh khắc <strong>để bạn dừng lại</strong>, lắng nghe và <strong>gặp lại chính mình</strong> – không phải phiên bản mà người khác mong đợi, mà là <strong>con người thật bên trong</strong>.
                                 </p>
-                                <p class="highlight">
+                                <p>
                                     Trong không gian an toàn và ấm áp, bạn sẽ tìm thấy những <strong>giá trị</strong>, <strong>điểm mạnh</strong> và <strong>điểm yếu</strong> của chính mình – những điều làm nên “tôi là tôi”.
                                 </p>
                             </div>
@@ -495,7 +502,7 @@
                                 <p class="mt-3">
                                     Thế giới chuyển mình nhờ những người <strong>dám nghĩ khác</strong> và <strong>hành động vì điều tốt đẹp</strong>. Ngày thứ hai là hành trình bạn <strong>khám phá ý nghĩa thật sự của lãnh đạo</strong> – <strong>không phải quyền lực</strong>, mà là <strong>trách nhiệm</strong>, <strong>lòng trắc ẩn</strong> và <strong>tầm nhìn truyền cảm hứng</strong>.
                                 </p>
-                                <p class="highlight">
+                                <p>
                                     Bạn sẽ được <strong>thực hành kỹ năng xã hội</strong>, học cách <strong>kết nối</strong>, <strong>hợp tác</strong> và <strong>tạo nên thay đổi tích cực</strong> quanh mình.
                                 </p>
                             </div>
@@ -514,7 +521,7 @@
                                 <p class="mt-3">
                                     Lãnh đạo không dừng ở ý tưởng – <strong>lãnh đạo bắt đầu khi bạn hành động</strong>. Ngày thứ ba là lúc bạn <strong>biến cảm hứng thành thực tiễn</strong>, cùng đồng đội <strong>khởi tạo những dự án tạo tác động tích cực</strong> cho cộng đồng.
                                 </p>
-                                <p class="highlight">
+                                <p>
                                     Quyết đoán – Bình tĩnh dưới áp lực – Bền bỉ – Đương đầu bất định: <strong>Phát triển bản thân</strong>.
                                 </p>
                             </div>
@@ -564,66 +571,69 @@
 <div id="team" class="untree_co-section bg-light team-section">
     <div class="container">
         <div class="row justify-content-center mb-5">
-            <div class="col-lg-7 text-center" data-aos="fade-up">
-                <h2 class="line-bottom mb-2">Đội Ngũ Đồng Hành</h2>
-                <p class="sub-title mb-0">Ai sẽ đồng hành cùng bạn? Người thiết kế, người dẫn dắt, người điều phối</p>
+            <div class="col-lg-8 text-center" data-aos="fade-up">
+                <h2 class="line-bottom mb-2">Ai sẽ đồng hành cùng bạn?</h2>
+                <!--<p class="sub-title mb-0">Ai sẽ đồng hành cùng bạn? Người thiết kế, người dẫn dắt, người điều phối</p>-->
             </div>
         </div>
 
         <div class="row g-4 g-xl-5">
-            <!-- Thành viên 1 -->
+            <!-- THÀNH VIÊN 1: CÔ LÊ HẰNG -->
             <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="team-card">
                     <div class="team-img-wrapper">
-                        <img src="images/lehang.png" alt="ThS. Lê Hằng" class="team-img">
+                        <img src="images/lehang.png" alt="Cô Lê Hằng" class="team-img">
                     </div>
                     <div class="team-info">
-                        <h3 class="team-name">ThS. Lê Hằng</h3>
-                        <p class="team-role">– Người Dẫn Dắt –</p>
+                        <h3 class="team-name">cô Lê Hằng</h3>
+                        <p class="team-role">– Người thiết kế và dẫn dắt chương trình –</p>
                         <ul class="team-desc">
-                            <li>Nhà cung cấp các dịch vụ nghề nghiệp được chứng nhận năng lực bởi Hiệp hội Phát triển Nghề nghiệp Hoa Kỳ (NCDA), thành viên Hiệp hội Phát triển Nghề nghiệp Châu Á – Thái Bình Dương (APCDA)</li>
-                            <li>Trưởng Phòng Tham vấn Nghề nghiệp & Phát triển Cá nhân, Trường Dự án Hướng nghiệp Cánh Diều Xanh (T&C Việt Nam)</li>
-                            <li>Giảng viên môn Thực hành Giao tiếp Chuyên nghiệp tại Đại học Swinburne Việt Nam; cựu giảng viên môn Kỹ năng viết làm & Giao tiếp trong Kinh doanh tại Đại học Quốc tế – Đại học Quốc gia Hà Nội</li>
-                            <li>Hơn 20 năm kinh nghiệm kinh nghiệm làm việc với các tổ chức quốc tế. Ngân hàng Thế giới, Cơ quan Hợp tác Quốc tế Nhật Bản...</li>
+                            <li>Với hơn 20 năm kinh nghiệm trong lĩnh vực phát triển thanh thiếu niên và cộng đồng</li>
+                            <li>Thiết kế và điều phối nhiều chương trình lãnh đạo trẻ uy tín: I COMMIT (CSDS & Irish Aid), Youth Co:Lab (UNDP, Citi), YSEALI “Kết nối Kinh tế” (Chính phủ Hoa Kỳ), Young@Heart (Oxfam toàn cầu)</li>
+                            <li>Thạc sĩ Nghiên cứu Phát triển – Đại học Melbourne (học bổng Chính phủ Úc)</li>
+                            <li>Cựu Chủ tịch Hội Sinh viên Việt Nam tại Melbourne (MOVSA), Du học sinh tiêu biểu 2009</li>
+                            <li>Tin rằng mỗi bạn trẻ đều có thể trở thành tác nhân thay đổi tích cực khi được tạo không gian an toàn và truyền cảm hứng</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- Thành viên 2 -->
+            <!-- THÀNH VIÊN 2: CÔ NGA PHƯƠNG -->
             <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="team-card">
                     <div class="team-img-wrapper">
-                        <img src="images/truonghuyentrang.png" alt="ThS. Trương Huyền Trang" class="team-img">
+                        <img src="images/ngaphuong.jpg" alt="Cô Nga Phương" class="team-img">
+                        <!-- Nếu chưa có ảnh, bạn đổi tên file sau -->
                     </div>
                     <div class="team-info">
-                        <h3 class="team-name">ThS. Trương Huyền Trang</h3>
+                        <h3 class="team-name">cô Nga Phương</h3>
                         <p class="team-role">– Người Dẫn Dắt –</p>
                         <ul class="team-desc">
-                            <li>Thạc sĩ Tâm lý học trường học</li>
-                            <li>Chuyên gia giáo dục và tư vấn hướng nghiệp</li>
-                            <li>Hơn 20 năm làm việc trong lĩnh vực Giáo dục từ phổ thông đến Đại học...</li>
-                            <li>Chứng chỉ Chuyên viên Tư vấn & Giáo dục Hướng nghiệp (Sóng An)...</li>
-                            <li>Đồng sáng lập Indigo Education Company, Mỹ</li>
+                            <li>Hơn 20 năm làm việc cùng thanh thiếu niên</li>
+                            <li>Giáo viên Ngữ văn THPT, người quan tâm sâu sắc đến sự phát triển của thế hệ trẻ</li>
+                            <li>Xem các bạn trẻ như những “hạt mầm” chỉ cần được chăm bón đúng cách sẽ bật thành cây lớn</li>
+                            <li>Tin rằng khi được trao cơ hội và niềm tin, các bạn sẽ trở thành người dẫn dắt những thay đổi tích cực cho bản thân và cộng đồng</li>
+                            <li>Hẹn gặp các bạn tại ImpactLab!</li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <!-- Thành viên 3 -->
+            <!-- THÀNH VIÊN 3: CHỊ THU TRANG (ĐIỀU PHỐI) -->
             <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="team-card">
                     <div class="team-img-wrapper">
-                        <img src="images/phamquynhchi.png" alt="Cô Phạm Quỳnh Chi" class="team-img">
+                        <img src="images/ThuTrang.png" alt="Chị Trần Ngọc Thu Trang" class="team-img">
+                        <!-- Nếu chưa có ảnh, bạn đổi tên file sau -->
                     </div>
                     <div class="team-info">
-                        <h3 class="team-name">Cô Phạm Quỳnh Chi</h3>
-                        <p class="team-role">– Người Điều Phối –</p>
+                        <h3 class="team-name">chị Thu Trang</h3>
+                        <p class="team-role">– Điều phối dự án ImpactLab –</p>
                         <ul class="team-desc">
-                            <li>Hơn 5 năm kinh nghiệm trong việc thiết kế và triển khai chương trình giáo dục hướng nghiệp...</li>
-                            <li>16 năm kinh nghiệm làm việc trong lĩnh vực tài chính - ngân hàng...</li>
-                            <li>Nhà thực hành giáo dục phi bạo lực và công cụ lập trình ngôn ngữ tư duy...</li>
-                            <li>Chứng chỉ Chuyên viên Giáo dục hướng nghiệp và Tư vấn Hướng nghiệp từ Sóng An</li>
+                            <li>Tốt nghiệp ngành Quan hệ Quốc tế tại Nhật Bản</li>
+                            <li>Nhiều năm sáng lập và tham gia các tổ chức thanh niên, triển khai dự án xã hội</li>
+                            <li>Sở hữu góc nhìn thực tế và hiểu biết sâu sắc về khát vọng sống có ích của người trẻ</li>
+                            <li>Đồng hành cùng các bạn phát triển tư duy tích cực, năng lực lãnh đạo và trở thành phiên bản tự hào nhất của chính mình</li>
                         </ul>
                     </div>
                 </div>
@@ -700,74 +710,60 @@
     <div class="container">
         <div class="row justify-content-center mb-5">
             <div class="col-lg-7 text-center" data-aos="fade-up">
-                <h2 class="line-bottom mb-2">Đăng Ký Tham Gia</h2>
-                <p class="sub-title mb-0">Làm thế nào để tham gia?</p>
+                <h2 class="line-bottom mb-2">Làm thế nào để tham gia?</h2>
             </div>
         </div>
 
         <div class="row g-4 g-xl-5 justify-content-center">
-            <!-- CARD 1: THỜI GIAN -->
+            <!-- CARD 1: THỜI GIAN (CHƯƠNG TRÌNH DÀI NGÀY) -->
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="info-card">
                     <div class="info-icon time">
-                        <span class="uil uil-clock"></span>
+                        <span class="uil uil-calendar-alt"></span>
                     </div>
-                    <h3 class="info-title">Thời Gian</h3>
+                    <h3 class="info-title">Thời Gian Diễn Ra</h3>
                     <div class="info-content">
-                        <p>Từ <strong>thứ hai ngày 09/06</strong> đến <strong>thứ bảy ngày 14/06/2025</strong></p>
-                        <ul class="time-list">
-                            <li><strong>Sáng:</strong> 8h30 – 11h30</li>
-                            <li><strong>Nghỉ trưa:</strong> 11h30 – 13h30</li>
-                            <li><strong>Chiều:</strong> 13h30 – 16h30</li>
-                        </ul>
+                        <p class="mb-2">Toàn bộ chương trình diễn ra</p>
+                        <p class="mb-2" style="font-size: 20px"><b>01/01/2026</b> - <b>15/03/2026</b></p>
                     </div>
                 </div>
             </div>
 
-            <!-- CARD 2: ĐỊA ĐIỂM -->
+            <!-- CARD 2: ĐỊA ĐIỂM (THÁI NGUYÊN) -->
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="info-card">
                     <div class="info-icon location">
-                        <span class="uil uil-location-point"></span>
+                        <span class="uil uil-mountains"></span>
                     </div>
                     <h3 class="info-title">Địa Điểm</h3>
                     <div class="info-content">
-                        <p><strong>Đại học Công nghệ Swinburne Australia</strong><br>
-                            (Swinburne Việt Nam), Số 2 Đường Khuê, Quận Cầu Giấy, TP. Hà Nội</p>
+                        <p class="fw-bold"><b>Khu bảo tồn Làng nhà sàn dân tộc sinh thái</b>
+                            <br>
+                            <span style="font-size: 16px">Thái Hải, Thịnh Đức, Thái Nguyên.</span>
+                        </p>
                     </div>
                 </div>
             </div>
 
-            <!-- CARD 3: ĐĂNG KÝ (QR CODE) -->
-            <!-- CARD 3: ĐĂNG KÝ (Click hiện ảnh QR lớn chất lượng cao) -->
+            <!-- CARD 3: ĐĂNG KÝ BẰNG LINK + DEADLINE -->
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                <div class="info-card qr">
-                    <div class="info-icon qr-icon">
-                        <span class="uil uil-qrcode-scan"></span>
+                <div class="info-card register-now">
+                    <div class="info-icon register">
+                        <span class="uil uil-file-check-alt"></span>
                     </div>
-                    <h3 class="info-title">ĐĂNG KÝ</h3>
+                    <h3 class="info-title">Đăng Ký Tham Gia</h3>
                     <div class="info-content text-center">
-                        <!-- Click để hiện ảnh lớn -->
-                        <a href="#" >
-                            <img src="images/qr-code.png" alt="QR Đăng ký ImpactLab" class="qr-img qr-large-trigger">
+                        <p class="mb-3">Hạn chót đăng ký</p>
+                        <h5 class="text-danger fw-bold"><b>23h59 ngày 22/12/2025</b></h5>
+                        <a href="https://www.facebook.com/cpds.tcviet" target="_blank" class="btn btn-primary btn-lg mt-3 w-100 btn-animated-only">
+                            Đăng Ký Tại Đây
                         </a>
-                        <p class="mt-3"><small>Nhấn để xem mã QR lớn</small></p>
+                        <p class="mt-3"><small class="text-muted">* Số lượng có hạn - nên đăng ký sớm.</small></p>
                     </div>
                 </div>
             </div>
 
-            <!-- LIGHTBOX QR LỚN (ẩn, hiện khi click) -->
-            <div class="qr-lightbox" id="qrLightbox">
-                <div class="qr-lightbox-content">
-                    <span class="qr-lightbox-close">&times;</span>
-                    <img src="images/qr-large.png" alt="QR Code lớn" class="qr-lightbox-img">
-                    <div class="qr-lightbox-caption">
-                        <p>Quét mã QR để đăng ký ImpactLab</p>
-                    </div>
-                </div>
-            </div>
-
-            <script>
+            <!--<script>
                 document.addEventListener('DOMContentLoaded', function() {
                     const trigger = document.querySelector('.qr-large-trigger');
                     const lightbox = document.getElementById('qrLightbox');
@@ -796,7 +792,7 @@
                         }
                     });
                 });
-            </script>
+            </script>-->
         </div>
     </div>
 </div> <!-- /. dang ky tham gia -->
@@ -806,10 +802,11 @@
         <div class="row justify-content-between align-items-center py-4">
 
             <!-- Left: Logo + Language Switcher -->
-            <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+            <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
                 <div class="footer-lang">
                     <img src="images/LogoCPDS.png" alt="ImpactLab" class="footer-logo mb-3" style="padding-right: 10px;">
                     <img src="images/LogoT&C.png" alt="ImpactLab" class="footer-logo mb-3">
+                    <img src="images/LogoImpactLab-white.png" alt="ImpactLab" class="footer-logo mb-3" style="height: 50px;">
                 </div>
             </div>
 
@@ -976,6 +973,22 @@
 
         window.addEventListener('scroll', activateMenu);
         activateMenu(); // chạy lần đầu
+    });
+</script>
+
+<!--sticky logo image-->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const stickyNav = document.querySelector('.js-sticky-header');
+        const heroHeight = document.querySelector('.untree_co-hero').offsetHeight - 100; // điều chỉnh nếu cần
+
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) { // bắt đầu sticky sớm một chút
+                stickyNav.classList.add('sticked');
+            } else {
+                stickyNav.classList.remove('sticked');
+            }
+        });
     });
 </script>
 
