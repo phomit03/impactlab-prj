@@ -21,8 +21,9 @@ div[id^="benefit"],
 div[id^="content"],
 div[id^="team"],
 div[id^="register"],
+div[id^="feedback"],
 footer[id] {
-    scroll-margin-top: 80px; /* tùy chiều cao navbar của bạn */
+    scroll-margin-top: 40px; /* tùy chiều cao navbar của bạn */
 }
 
 body:before {
