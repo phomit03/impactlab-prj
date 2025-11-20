@@ -125,8 +125,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 .btn.btn-primary:hover {
-    border-color: #1573e8;
-    background: #1573e8;
+    border-color: #f0c440;
+    background: #f0c440;
 }
 
 .btn.btn-secondary {
@@ -1108,7 +1108,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     background: #f0c440 !important;
     border: 1px solid #f0c440 !important;
     color: #103456;
-    border-radius: 20px !important;
+    border-radius: 30px !important;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .untree_co-hero .link-highlight, .bg-img .link-highlight {
@@ -1144,7 +1146,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 .introduce-section {
-    padding: 80px 0 20px 0;
+    padding: 60px 0;
     position: relative;
 }
 
@@ -1542,12 +1544,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 }
 
 .block-testimonial p {
-    font-size: 18px;
-    color: #000000;
+    color: #3b444f;
     line-height: 2;
 }
 
 .block-testimonial .author {
+    margin-top: 20px;
     display: block;
 }
 
@@ -3113,12 +3115,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 /* =================== phản hồi ===================*/
 
 .feedback-section {
-    padding: 70px 0;
+    padding: 60px 0;
+    background: linear-gradient(135deg, rgb(249, 251, 253) 0%, rgb(255, 255, 255) 100%);
 }
 
 /* =================== đăng ký tham gia ===================*/
 .register-section {
-    padding: 70px 0 100px 0;
+    padding: 60px 0 100px 0;
     /*background: #f8f9fa;*/
 }
 
@@ -3394,8 +3397,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     position: fixed;
     bottom: 50px;
     right: 40px;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     background: #103456;
     color: white;
     border: none;
@@ -3410,6 +3413,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     visibility: hidden;
     transform: translateY(20px);
     transition: all 0.4s ease;
+    border-radius: 32px;
 }
 
 .back-to-top.show {
@@ -3530,9 +3534,6 @@ css/* ===================================================================
 @media (max-width: 1199.98px) {
     .services-section, .team-section {
         padding: 50px 0;
-    }
-    .services-section {
-        margin-top: 30px !important;
     }
 
     .line-bottom {
@@ -3967,7 +3968,7 @@ css/* ===================================================================
     width: 90px;
     height: 90px;
     margin: 0 auto 24px;
-    background: linear-gradient(135deg, #103456, #136ad5);
+    background: #103456;
     color: white;
     border-radius: 50%;
     display: flex;
@@ -4019,7 +4020,7 @@ css/* ===================================================================
 
 /* Dòng kết mạnh mẽ */
 .benefit-final {
-    background: linear-gradient(135deg, #103456, #136ad5);
+    background: #103456;
     color: white;
     border-radius: 20px;
     box-shadow: 0 15px 40px rgba(16, 52, 86, 0.25);
@@ -4048,7 +4049,6 @@ css/* ===================================================================
 .difference-new-section {
     overflow: hidden;
     padding: 60px 0;
-    margin-top: 40px;
 }
 
 .diff-card {
@@ -4072,7 +4072,7 @@ css/* ===================================================================
     font-size: 64px;
     font-weight: 900;
     color: #f0c440;
-    opacity: 0.2;
+    opacity: 0.3;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -4102,7 +4102,7 @@ css/* ===================================================================
 .diff-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #103456, #136ad5);
+    background: #103456;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -4134,7 +4134,7 @@ css/* ===================================================================
 /* Card nổi bật nhất (card 2) */
 .diff-card-2 {
     transform: translateY(-30px); /* đẩy lên cao hơn tạo độ chồng */
-    background: linear-gradient(135deg, #103456, #136ad5);
+    background: #103456;
     color: white;
     z-index: 2;
 }
@@ -4246,7 +4246,7 @@ css/* ===================================================================
 }
 
 .timeline-card.highlight {
-    background: linear-gradient(135deg, #103456, #136ad5);
+    background: #103456;
     color: white;
     transform: scale(1.1);
     box-shadow: 0 20px 60px rgba(16,52,86,0.3);
@@ -4325,4 +4325,135 @@ css/* ===================================================================
 @media (max-width: 576px) {
     .transform-day h3 { font-size: 21px; }
     .transform-day blockquote { font-size: 16px; }
+}
+
+/* ==================== TEAM – DẠNG NGANG HOÀN TOÀN ==================== */
+.team-horizontal-section {
+    padding: 60px 0;
+    background: linear-gradient(135deg, #f9fbfd 0%, #ffffff 100%);
+}
+
+.team-hlist {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-hrow {
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(16, 52, 86, 0.08);
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+/*.team-hrow:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 70px rgba(16,52,86,0.15);
+}*/
+
+/* Xen kẽ nền nhẹ cho đẹp */
+.team-hrow.alternate {
+    background: linear-gradient(135deg, #f0f6ff 0%, #fafcff 100%);
+}
+
+.team-hphoto {
+    width: 220px;
+    height: 220px;
+    overflow: hidden;
+    border: 8px solid #f0c440;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    transition: all 0.4s;
+    border-radius: 50%;
+}
+
+.team-hphoto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.team-hrow:hover .team-hphoto img {
+    transform: scale(1.1);
+}
+
+.team-hname {
+    font-size: 30px;
+    font-weight: 800;
+    color: #103456;
+    margin-bottom: 8px;
+}
+
+.team-hrole {
+    font-size: 16px;
+    color: #136ad5;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.team-hdesc {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #444;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.team-hdesc li {
+    margin-bottom: 10px;
+    font-size: 16px !important;
+}
+
+.team-hdesc .text-gold {
+    color: #f0c440;
+}
+
+/* Responsive hoàn hảo */
+@media (max-width: 991.98px) {
+    .team-hrow {
+        padding: 50px 30px;
+        border-radius: 24px;
+    }
+    .team-hphoto {
+        width: 180px;
+        height: 180px;
+        margin: 0 auto 30px;
+    }
+    .team-hname { font-size: 28px; }
+    .flex-lg-row-reverse { flex-direction: column-reverse !important; }
+    .text-lg-start, .text-lg-end { text-align: center !important; }
+}
+
+@media (max-width: 576px) {
+    .team-hrow { padding: 40px 20px; }
+    .team-hname { font-size: 24px; }
+    .team-hdesc { font-size: 16px; padding-left: 0; }
+    .team-hphoto { width: 160px; height: 160px; }
+}
+
+.simple-register-content ul li {
+    position: relative;
+    padding-left: 30px;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #333;
+}
+
+.simple-register-content ul li:before {
+    content: "•";
+    color: #f0c440;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    font-size: 24px;
+}
+
+@media (max-width: 767px) {
+    .simple-register-content ul li {
+        font-size: 17px;
+        padding-left: 25px;
+    }
 }
