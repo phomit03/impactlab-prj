@@ -3982,6 +3982,22 @@ css/* ===================================================================
     background: linear-gradient(135deg, #f0c440, #f0d680);
 }
 
+/* Icon dạng ảnh thay vì font */
+.benefit-img-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 8px rgba(0,0,0,0.3))
+    brightness(0) invert(1); /* trắng + bóng đổ nhẹ */
+    stroke-width: 3 !important;        /* làm nét dày hơn (dành cho SVG) */
+    stroke: white !important;
+    transition: transform 0.4s ease;
+}
+
+.benefit-card:hover .benefit-img-icon {
+    transform: scale(1.12);
+}
+
 .benefit-title {
     font-size: 20px;
     font-weight: 700;
