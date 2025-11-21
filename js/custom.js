@@ -244,7 +244,8 @@ $(function(){
 				nav: false,
 				autoplayHoverPause: false,
 				items: 1,
-				smartSpeed: 1000,
+				smartSpeed: 2000,
+				autoplayTimeout: 15000,
 				autoHeight: true,
 				navText : ["<span class='ion-android-arrow-dropleft'></span>","<span class='ion-android-arrow-dropright'></span>"],
 				responsive:{
