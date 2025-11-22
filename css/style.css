@@ -1184,6 +1184,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .untree_co-section h2{
     font-family: "Montserrat Black", sans-serif;
     font-size: 2.8rem;
+    font-weight: bold;
 }
 
 
