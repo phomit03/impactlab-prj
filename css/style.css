@@ -3135,7 +3135,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .register-section {
     padding: 60px 0 100px 0;
     /*background: #f8f9fa;*/
-    border-top: 1px solid #e9ecef;
 }
 
 .info-card {
@@ -4615,6 +4614,10 @@ css/* ===================================================================
         margin-bottom: 0.5rem !important;
     }
 
+    .fee-section {
+        padding-top: 40px;
+    }
+
     .register-section .btn {
         font-size: 14px;
     }
@@ -4659,4 +4662,23 @@ css/* ===================================================================
     .partner-img {
         max-height: 70px;
     }
+}
+
+
+/* ==================== PHÍ THAM GIA ==================== */
+.fee-section {
+    padding-top: 60px;
+    border-top: 1px solid #e9ecef;
+}
+
+.fee-content {
+    /*border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(16,52,86,0.1);*/
+    line-height: 1.8;
+}
+
+.note-box {
+    background: #fff8e1 !important;
+    border-left-color: #f0c440 !important;
+    border-radius: 0 12px 12px 0;
 }
